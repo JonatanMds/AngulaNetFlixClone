@@ -9,13 +9,39 @@
 }
 
 .loginForm {
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
+  justify-content: space-evenly;
   padding: 60px;
   width: 400px;
   height: 75vh;
+
+  input {
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  button {
+    background: #e50914;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .loginInput {
+    margin-bottom: 20px;
+  }
 }
 
 .footer {
