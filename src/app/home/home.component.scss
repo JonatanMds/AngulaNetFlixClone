@@ -1,0 +1,118 @@
+// Start Main
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 6px #2D2D2D;
+    
+    #title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    #button{
+        background-color: #E50914;
+        width: 220px;
+        height: 80px;
+        margin-top: 90px;
+        margin-bottom: 147px;
+        border-radius: 10px;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #button:hover{
+        background-color: #FD000D;
+    }
+        
+    h1{
+        font-weight: 800;
+        font-size: 72px;
+        text-align-last: center;
+    }
+    
+    p{
+        font-size: 28px;
+    }
+}
+// End Main
+
+
+// Start Section
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--color-tertiary);
+    border-bottom: solid 6px #2D2D2D;
+    color: var(--color-primary);
+    padding: 45px;
+
+    .text{
+        width: 586px;
+        p{
+            line-height: 47px;
+        }
+    }
+    
+    h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    p{
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+// End Section
+
+
+// Start Footer
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #6F6F6F;
+    background-color: var(--color-tertiary);
+    padding: 45px;
+    
+    P{
+        padding-bottom: 37px;
+        font-size: 26px;
+    }
+     
+    #uls{
+         display: flex;
+         justify-content: space-between;
+         
+         ul{
+             list-style: none;
+             padding-bottom: 62px;
+             
+             li{
+                padding-bottom: 10px;
+                font-size: 18px;
+
+                a{
+                    text-decoration: none;
+                    color: #6F6F6F;
+                }
+             }
+
+             li:hover{
+                text-decoration: underline;
+             }
+         }
+     }
+
+     #netflixBrasil{
+         font-size: 18px;
+     }
+}
+// End Footer
