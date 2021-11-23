@@ -1,0 +1,157 @@
+.w-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.w-modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.w-card {
+  width: 70vw;
+  margin-top: 40px;
+  margin-bottom: 200px; //remover
+  display: flex;
+  flex-direction: column;
+}
+
+.w-card-top {
+  height: 50vw;
+  padding: 50px 60px;
+  background-image: url("https://cinestera.com.br/wp-content/uploads/2021/11/Alerta-Vermelho-Final-Explicado.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.w-card-btn1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.w-card-btn1 button {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+}
+
+.w-card-top h2 {
+  font-size: 5rem;
+  color: rgb(127, 255, 0);
+}
+
+.card-btn2 {
+  width: 180px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.card-btn2 label {
+  font-size: 20px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.card-btn2 button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+}
+
+.w-card-botton {
+  background-color: rgb(0, 0, 0);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+}
+
+.w-card-left {
+  width: 45vw;
+  padding: 30px 10px 60px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.w-card-left ul {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+#limit-age {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.w-card-left ul li {
+  height: 30px;
+  color: white;
+  list-style: none;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.w-card-left ul li span {
+  margin-right: 10px;
+}
+
+.w-card-left p {
+  color: white;
+}
+
+.w-card-right {
+  width: 25vw;
+  padding: 30px 60px 60px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.w-card-right ul li {
+  font-size: 0.875rem;
+  color: white;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.w-card-right ul li span {
+  color: rgb(165, 42, 42);
+}
+
+.w-modal-backgound {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.85;
+  z-index: 900;
+}
