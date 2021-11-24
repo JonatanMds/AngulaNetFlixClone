@@ -1,6 +1,12 @@
 <div class="loginArea">
   <div class="loginContent">
-    <form action="#" method="post" class="loginForm" [formGroup]="loginForm">
+    <form
+      action="#"
+      method="post"
+      class="loginForm"
+      [formGroup]="loginForm"
+      (submit)="ngOnSubmit()"
+    >
       <div class="loginTitle">
         <h1>Entrar</h1>
       </div>

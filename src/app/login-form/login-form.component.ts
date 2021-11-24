@@ -10,7 +10,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 
 export class LoginFormComponent implements OnInit {
   status: boolean = true;
-  loginForm: any = '';
+  loginForm:FormGroup = {} as FormGroup;
 
   constructor(private fb: FormBuilder) { }
 
@@ -27,7 +27,7 @@ export class LoginFormComponent implements OnInit {
   }
 
   ngOnSubmit() {
-    console.log('submit');
+    console.log(this);
   }
 
 }
