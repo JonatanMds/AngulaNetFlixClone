@@ -49,10 +49,16 @@
     line-height: 20px;
     color: #8c8c8c;
 
-    & > p:first-child {
-      margin-bottom: 15px;
+    &Bottom {
+      margin-top: 20px;
     }
   }
+}
+
+#show-more {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer {
