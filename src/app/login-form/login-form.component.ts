@@ -9,7 +9,14 @@ export class LoginFormComponent implements OnInit {
 
   constructor() { }
 
+  status: boolean = true;
+
   ngOnInit(): void {
   }
+
+  toggleText() {
+    this.status = !this.status;
+  }
+
 
 }
