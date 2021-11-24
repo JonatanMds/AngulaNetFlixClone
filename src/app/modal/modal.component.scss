@@ -36,7 +36,7 @@
   position: relative;
 }
 
-.w-card-btn1 {
+.w-card-btn--close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -48,7 +48,7 @@
   justify-content: center;
 }
 
-.w-card-btn1 button {
+.w-card-btn--close button {
   font-size: 20px;
   color: rgb(255, 255, 255);
   background-color: transparent;
@@ -60,7 +60,7 @@
   color: rgb(127, 255, 0);
 }
 
-.card-btn2 {
+.card-btn2--assistir {
   width: 180px;
   height: 60px;
   background-color: rgb(255, 255, 255);
@@ -70,13 +70,14 @@
   justify-content: center;
 }
 
-.card-btn2 label {
+.card-btn2--assistir label {
+  color: rgb(0, 0, 0);
   font-size: 20px;
   align-self: center;
   margin-right: 10px;
 }
 
-.card-btn2 button {
+.card-btn2--assistir button {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: transparent;
@@ -151,7 +152,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #000000;
-  opacity: 0.85;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.55;
   z-index: 900;
 }
