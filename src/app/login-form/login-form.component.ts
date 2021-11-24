@@ -7,7 +7,6 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
   styleUrls: ['./login-form.component.scss']
 })
 
-
 export class LoginFormComponent implements OnInit {
   status: boolean = true;
   loginForm:FormGroup = {} as FormGroup;
@@ -15,19 +14,21 @@ export class LoginFormComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    this.loginForm = this.fb.group({
+     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
-
-
   toggleText() {
     this.status = !this.status;
   }
 
   ngOnSubmit() {
     console.log(this);
+  }
+
+  console() {
+    console.log(this)
   }
 
 }
