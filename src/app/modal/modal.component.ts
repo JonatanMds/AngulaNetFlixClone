@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,16 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  @Input() stateModal = true
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  closeModalInfo(){
-    this.stateModal = false
-  }
-  
 
 }

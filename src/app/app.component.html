@@ -1,3 +1,8 @@
-<h1>NetFlix clone Works!</h1>
-<app-modal [stateModal]="hidenModal" *ngIf="hidenModal"></app-modal>
-<button type="button" (click)="showModalInfo()">Show Modal</button>
+<div class="main">
+  <div class="netflix-logo">
+    <a href="#">
+      <img src="assets/images/netflixLogo.png" alt="netflix-Logo" />
+    </a>
+  </div>
+</div>
+<router-outlet></router-outlet>
