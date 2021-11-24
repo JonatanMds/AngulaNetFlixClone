@@ -14,13 +14,22 @@
         <div class="loginInput">
           <input
             type="text"
-            name="username"
+            name="email"
             placeholder="Email ou número do telefone"
+            formControlName="email"
+            (click)="console()"
             required
           />
         </div>
         <div class="loginInput">
-          <input type="password" name="password" placeholder="Senha" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            formControlName="password"
+            (click)="console()"
+            required
+          />
         </div>
       </div>
 
