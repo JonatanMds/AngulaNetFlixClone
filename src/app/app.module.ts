@@ -11,6 +11,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
   declarations: [
     AppComponent,
     ModalComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

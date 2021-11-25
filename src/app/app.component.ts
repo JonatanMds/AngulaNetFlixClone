@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +6,15 @@ import { Component, Output } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  hidenModalInf= false
+
+  showModalInf(){
+    this.hidenModalInf= true
+  }
+
+  onStateModalIn(evento: any ){
+    console.log(evento)
+    this.hidenModalInf = evento.value
+  }
 }

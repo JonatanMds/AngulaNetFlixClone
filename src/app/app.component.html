@@ -6,3 +6,9 @@
   </div>
 </div>
 <router-outlet></router-outlet>
+<app-modal
+  [stateModalInf]="hidenModalInf"
+  (stateModalInfChange)="onStateModalIn($event)"
+  *ngIf="hidenModalInf"
+></app-modal>
+<button (click)="showModalInf()">Show Modal</button>
