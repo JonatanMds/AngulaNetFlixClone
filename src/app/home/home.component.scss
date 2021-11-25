@@ -1,3 +1,7 @@
+body{
+    font-size: 16px;
+}
+
 // Start Main
 #main{
     display: flex;
@@ -12,7 +16,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 168px;
         margin-bottom: 40px;
+    }
+
+    p{
+        text-align-last: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #button{
@@ -23,9 +36,14 @@
         margin-bottom: 147px;
         border-radius: 10px;
         border: none;
-        font-size: 28px;
+        font-size: 2em;
         color: white;
         cursor: pointer;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 
     #button:hover{
@@ -34,19 +52,19 @@
         
     h1{
         font-weight: 800;
-        font-size: 72px;
+        font-size: 4.5em;
         text-align-last: center;
     }
     
     p{
-        font-size: 28px;
+        font-size: 1.8em;
     }
 }
 // End Main
 
 
-// Start Section
-.section{
+// Start div
+.div{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -63,15 +81,15 @@
     }
     
     h1{
-        font-size: 50px;
+        font-size: 3.1em;
         font-weight: 800;
     }
     p{
-        font-size: 26px;
+        font-size: 1.5em;
         font-weight: 400;
     }
 }
-// End Section
+// End div
 
 
 // Start Footer
@@ -84,7 +102,7 @@ footer{
     
     P{
         padding-bottom: 37px;
-        font-size: 26px;
+        font-size: 1.5em;
     }
      
     #uls{
@@ -97,7 +115,7 @@ footer{
              
              li{
                 padding-bottom: 10px;
-                font-size: 18px;
+                font-size: 1em;
 
                 a{
                     text-decoration: none;
@@ -112,7 +130,41 @@ footer{
      }
 
      #netflixBrasil{
-         font-size: 18px;
+         font-size: 1em;
      }
 }
 // End Footer
+
+
+
+// responsividade
+
+@media screen and(max-width: 1024px) {
+    body{
+        font-size: 12px;
+    }
+}
+@media screen and(max-width: 768px) {
+    .div{
+        display: flex;
+        flex-direction: column;
+
+        .text{
+            width: 100vw;
+            padding: 10px;
+        }
+
+        img{
+            order: 1;
+        }
+    }   
+
+
+    h1{
+        text-align-last: center;
+    }
+
+    p{
+        text-align-last: center;
+    }
+}

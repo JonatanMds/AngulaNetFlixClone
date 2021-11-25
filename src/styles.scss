@@ -15,4 +15,19 @@
     font-family: "Martel Sans", sans-serif;
     color: white;
     background-color: black;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: white;
+  --color-secondary: #6f6f6f;
+  --color-tertiary: #000;
+}
+
+html {
+  font-family: "Martel Sans", sans-serif;
+  color: white;
+  background-color: black;
+}
