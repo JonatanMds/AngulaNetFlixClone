@@ -1,190 +1,156 @@
-header{
-   background: url('../../assets/img/movie-banner.png') top no-repeat;
-   background-size: cover;
-   display: flex;
-   justify-content: center;
+header {
+  background: url("../../assets/images/movie-banner.png") top no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
-.headerContainer{
-    width: 100%;
-    height: 810px;
-    padding: 30px 81px;
+.headerContainer {
+  width: 100%;
+  height: 810px;
+  padding: 30px 81px;
 }
 
 /* ########## MENU ########## */
 
-nav ul{
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
 }
 
-nav ul li{
-    margin-right: 32px;
+nav ul li {
+  margin-right: 32px;
 }
 
-nav ul li:nth-child(1) a{
-    font-weight: 800;
+nav ul li:nth-child(1) a {
+  font-weight: 800;
 }
 
-nav ul li:focus-within a{
-    font-weight: 800;
+nav ul li:focus-within a {
+  font-weight: 800;
 }
 
-nav ul li a{
-    color: white;
-    font-family: 'Martel Sans';
-    font-size: 24px;
-    font-weight: 200;
-    text-decoration: none;
-    transition: opacity 0.2s linear;
+nav ul li a {
+  color: white;
+  font-family: "Martel Sans";
+  font-size: 24px;
+  font-weight: 200;
+  text-decoration: none;
+  transition: opacity 0.2s linear;
 }
 
-nav ul li a:hover{   
-    opacity: 0.5;
+nav ul li a:hover {
+  opacity: 0.5;
 }
 
 /* ########## BANNER ########## */
 
-.banner{
-    padding: 32px 0px;
-    max-width: 1440px;
+.banner {
+  padding: 32px 0px;
+  max-width: 1440px;
 }
 
-.rankToday{
+.rankToday {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 52px;
+
+  div {
+    width: 40px;
+    height: 40px;
+    background: #e50914;
+    border-radius: 5px;
     display: flex;
-    justify-content: flex-start;
-    margin-top: 52px;
-    
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
 
-    div{
-        width: 40px;
-        height: 40px;
-        background: #E50914;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 16px;
-
-        p{
-            font-family: 'Martel Sans';
-            font-weight: 900;
-            color: white;
-            line-height: 16px;
-            text-align: center;
-            margin-bottom: -8px;
-            padding: 0px;
-        }
+    p {
+      font-family: "Martel Sans";
+      font-weight: 900;
+      color: white;
+      line-height: 16px;
+      text-align: center;
+      margin-bottom: -8px;
+      padding: 0px;
     }
+  }
 
-    span{
-        font-family: 'Martel Sans';
-        font-size: 26px;
-        font-weight: 900;
-        color: white;
-    }
-
-}
-
-.movieTitle{ 
-    max-width: 706px;
-    margin-top: 30px;
-    p{        
-        font-family: 'Martel Sans';
-        font-size: 26px;
-        font-weight: 400;
-        font-style: normal;
-        color: white;
-        line-height: 32px;
-    }
-}
-
-.bannerButtons{
-    margin-top: 26px;
-}
-
-.bannerButtons button{
-    height: 60px;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Martel Sans';
-    font-size: 24px;
-    font-weight: 700;    
-    margin-right: 36px;
-    cursor: pointer;
-    padding-top: 6px;
-    transition: background-color 0.2s linear;
-}
-
-.playButton{
-    background: url(../../assets/img/icon-play.png) white no-repeat 20px;
-    padding: 0px 30px 0px 50px;    
-}
-
-.infoButton{
-    background: url(../../assets/img/icon-info.png)  no-repeat 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+  span {
+    font-family: "Martel Sans";
+    font-size: 26px;
+    font-weight: 900;
     color: white;
-    padding: 0px 30px 0px 60px;
+  }
 }
 
-.playButton:hover{
-    background-color: rgba(255, 255, 255, 0.7);
+.movieTitle {
+  max-width: 706px;
+  margin-top: 30px;
+  p {
+    font-family: "Martel Sans";
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    line-height: 32px;
+  }
 }
 
-.infoButton:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+.bannerButtons {
+  margin-top: 26px;
+}
+
+.bannerButtons button {
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Martel Sans";
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 36px;
+  cursor: pointer;
+  padding-top: 6px;
+  transition: background-color 0.2s linear;
+}
+
+.playButton {
+  background: url(../../assets/images/icon-play.png) white no-repeat 20px;
+  padding: 0px 30px 0px 50px;
+}
+
+.infoButton {
+  background: url(../../assets/images/icon-info.png) no-repeat 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 0px 30px 0px 60px;
+}
+
+.playButton:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.infoButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ########## MAIN ########## */
 
-main{
-    width: 100%;
-    margin-top: -90px;
+main {
+  width: 100%;
+  margin-top: -90px;
 }
 
-section{
-    width: 100%;
-    margin-bottom: 70px;
+section {
+  width: 100%;
+  margin-bottom: 70px;
 
-    h2{
-        font-family: 'Martel Sans';
-        font-size: 24px;
-        font-weight: 700;
-        color: white;
-        padding-left: 81px;
-    }
-    
-}
-
-
-.slider{
-    overflow-x: scroll;
-    cursor: grab;
-    
-    ul{        
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 20px;
-        list-style: none;
-        padding-left: 81px;
-        transition: transform 0.5s linear;
-
-        li{
-            margin-right: 20px;
-
-            img{
-                width: 15vw;
-            }
-        }
-    }
-
-    &::-webkit-scrollbar{
-        display: none;
-    }
-}
-
-.sliderButton{
-    
+  h2 {
+    font-family: "Martel Sans";
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    padding-left: 81px;
+  }
 }
