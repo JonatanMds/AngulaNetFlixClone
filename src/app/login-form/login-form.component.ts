@@ -8,6 +8,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 })
 
 export class LoginFormComponent implements OnInit {
+  
   status: boolean = true;
   loginForm:FormGroup = {} as FormGroup;
 
@@ -19,16 +20,13 @@ export class LoginFormComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
+
   toggleText() {
     this.status = !this.status;
   }
 
   ngOnSubmit() {
-    console.log(this);
-  }
-
-  console() {
-    console.log(this)
+    console.log(this.loginForm.value);
   }
 
 }
