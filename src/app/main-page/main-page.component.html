@@ -1,6 +1,6 @@
 <header>
   <div class="headerContainer">
-    <nav>
+    <nav class="burguer">
       <ul>
         <li><a href="#">Início</a></li>
         <li><a href="#">Séries</a></li>
@@ -37,12 +37,24 @@
 </header>
 
 <main>
-  <section *ngFor="let listMovies of userInfoData | keyvalue">
+    <div class="mainLoading" *ngIf="mainLoading"><p style="color: white;">Caregando...</p></div>
+    <section *ngFor="let listMovies of userInfoData | keyvalue: asIsOrder">
+                
+        <h2 *ngIf="listMovies.key == 'popular'">Populares na Netflix</h2>
+        <h2 *ngIf="listMovies.key == 'keepWatching'">Continuar assistindo como Usuário {{user}}</h2>
+        
+        <app-slider [slideData]="listMovies.value"></app-slider>      
+
+    </section>
+
+<!--   <section *ngFor="let listMovies of userInfoData | keyvalue">
     <h2 *ngIf="listMovies.key == 'popular'">Populares na Netflix</h2>
     <h2 *ngIf="listMovies.key == 'keepWatching'">
       Continuar assistindo como Usuário {{ user }}
     </h2>
 
     <app-slider [slideData]="listMovies.value"></app-slider>
-  </section>
+  </section> -->
+
 </main>
+

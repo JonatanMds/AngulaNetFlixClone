@@ -42,7 +42,7 @@ export class LoginFormComponent implements OnInit {
   }
 
   ngOnSubmit() {
-    // console.log(this.loginForm.value);
+    console.log(this.loginForm)
     if(this.loginForm.valid) {
       this.loginService.login(this.loginForm.value).subscribe(
         (res: any) => {
@@ -52,7 +52,6 @@ export class LoginFormComponent implements OnInit {
         this.router.navigate(['/user']);
         }
       )
-    
     }
   }
 

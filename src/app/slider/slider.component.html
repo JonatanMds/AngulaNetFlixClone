@@ -1,6 +1,6 @@
 <div class="slider">
+    <div class="sliderLoagind" *ngIf="sliderLoading"><p>Carregando...</p></div>
     <ul>
-        <li *ngFor="let movie of movieList"><img src="{{movie.cardImage}}" alt=""></li>
+        <li *ngFor="let movie of movieList"><img id="img" src="{{movie.cardImage}}" alt=""></li>
     </ul>
-    <p>{{movieList}}</p>
 </div> 
