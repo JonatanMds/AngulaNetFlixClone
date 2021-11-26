@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ModalComponent } from './modal/modal.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ModalComponent } from './modal/modal.component';
     HomeComponent,
     ModalComponent,
     MainPageComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
