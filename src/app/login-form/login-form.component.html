@@ -17,8 +17,6 @@
             name="email"
             placeholder="Email ou número do telefone"
             formControlName="email"
-            (click)="console()"
-            required
           />
         </div>
         <div class="loginInput">
@@ -27,8 +25,6 @@
             name="password"
             placeholder="Senha"
             formControlName="password"
-            (click)="console()"
-            required
           />
         </div>
       </div>
@@ -41,11 +37,7 @@
           <p>
             Essa página é protegida pelo Google reCAPTCHA para garantir que você
             não é um robô.
-            <span
-              id="show-more"
-              *ngIf="status; else showMore"
-              (click)="toggleText()"
-            >
+            <span id="show-more" *ngIf="status; else showMore">
               Saiba mais.</span
             >
           </p>
