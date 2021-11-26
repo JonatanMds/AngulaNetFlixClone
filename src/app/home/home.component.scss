@@ -52,12 +52,12 @@ body {
 
   h1 {
     font-weight: 800;
-    font-size: 4.5em;
+    font-size: 3.8em;
     text-align-last: center;
   }
 
   p {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 }
 // End Main
@@ -73,14 +73,17 @@ body {
   padding: 45px;
 
   .text {
+    display: flex;
+    flex-direction: column;
     width: 586px;
     p {
       line-height: 47px;
+      
     }
   }
 
   h1 {
-    font-size: 3.1em;
+    font-size: 2.1em;
     font-weight: 800;
   }
   p {
@@ -97,6 +100,7 @@ body {
     font-size: 12px;
   }
 }
+
 @media screen and(max-width: 768px) {
   .div {
     display: flex;
@@ -112,11 +116,23 @@ body {
     }
   }
 
-  h1 {
-    text-align-last: center;
+  h1, p {
+    text-align: center;
   }
 
-  p {
-    text-align-last: center;
+}
+
+@media screen and(max-width: 426px) {
+  body{
+    font-size: 10px;
+  }
+  img{
+    width: 288px;
+  }
+
+  .text{
+    p, h1{
+      text-align: center;
+    }
   }
 }
