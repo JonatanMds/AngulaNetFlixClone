@@ -4,8 +4,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1000;
-  overflow: auto;
 }
 
 .w-modal-body {
@@ -14,17 +12,16 @@
 }
 
 .w-card {
-  width: 70vw;
-  margin-top: 40px;
-  margin-bottom: 200px; //remover
+  width: 65vw;
+  max-width: 1020px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
 
 .w-card-top {
-  height: 50vw;
-  padding: 50px 60px;
-  background-image: url("https://cinestera.com.br/wp-content/uploads/2021/11/Alerta-Vermelho-Final-Explicado.jpeg");
+  height: 43vw;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 5px;
@@ -37,34 +34,38 @@
 }
 
 .w-card-btn--close {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgb(0, 0, 0);
   position: absolute;
-  top: 35px;
-  right: 50px;
+  top: 20px;
+  right: 22px;
   display: flex;
   justify-content: center;
 }
 
 .w-card-btn--close button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
   font-size: 20px;
   color: rgb(255, 255, 255);
-  background-color: transparent;
   border: none;
 }
 
-.w-card-top h2 {
-  font-size: 5rem;
-  color: rgb(127, 255, 0);
+.card-image--title {
+  width: 45vw;
+  height: 18vw;
+  background-size: cover;
+  margin: 0 60px 60px 60px;
 }
 
 .card-btn2--assistir {
-  width: 180px;
-  height: 60px;
+  width: 12.5vw;
+  height: 4vw;
+  min-width: 92px;
+  min-height: 32px;
+  margin: 0 60px 60px 60px;
   background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 3px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -85,26 +86,43 @@
 }
 
 .w-card-botton {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .w-card-left {
-  width: 45vw;
-  padding: 30px 10px 60px 60px;
+  width: 39.7vw;
+  min-width: 135px;
+  padding: 30px 20px 60px 60px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 .w-card-left ul {
-  margin-bottom: 30px;
+  margin-top: 2px;
+  margin-bottom: 54px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#relevance {
+  color: rgb(70, 211, 105);
+  font-weight: 700;
+  display: inline;
+}
+
+#year {
+  font-weight: 400;
 }
 
 #limit-age {
+  font-weight: 900;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 0);
   border: 1px solid rgb(0, 0, 0);
@@ -112,11 +130,14 @@
 }
 
 .w-card-left ul li {
+  font-size: 20px;
   height: 30px;
   color: white;
   list-style: none;
   margin-right: 30px;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .w-card-left ul li span {
@@ -124,12 +145,12 @@
 }
 
 .w-card-left p {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .w-card-right {
-  width: 25vw;
-  padding: 30px 60px 60px 10px;
+  width: 25.2vw;
+  padding: 30px 60px 60px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -137,7 +158,7 @@
 
 .w-card-right ul li {
   font-size: 0.875rem;
-  color: white;
+  color: rgb(255, 255, 255);
   list-style: none;
   margin-bottom: 10px;
 }
@@ -155,4 +176,149 @@
   background-color: rgb(0, 0, 0);
   opacity: 0.55;
   z-index: 900;
+}
+
+@media screen and (max-width: 1021px) {
+  .w-modal-body {
+  }
+
+  .w-card {
+    width: 82vw;
+    margin-top: 30px;
+    transition: 2s;
+  }
+
+  .w-card-top {
+    height: 45vw;
+    transition: 2s;
+  }
+
+  .w-card-btn--close button {
+    width: 36px;
+    height: 36px;
+    transition: 2s;
+  }
+
+  .card-image--title {
+    width: 35vw;
+    height: 15vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 30px 30px 60px;
+    transition: 2s;
+  }
+
+  .card-btn2--assistir {
+    width: 13vw;
+    height: 4vw;
+    margin: 0 60px 20px 60px;
+    border-radius: 3px;
+    transition: 2s;
+  }
+
+  .card-btn2--assistir label {
+    font-size: 24px;
+    transition: 2s;
+  }
+
+  .card-btn2--assistir button {
+    font-size: 14px;
+    transition: 2s;
+  }
+
+  .w-card-left {
+    width: 50vw;
+    padding: 30px 10px 0px 60px;
+    transition: 2s;
+  }
+
+  #limit-age {
+    padding: 0px 4px;
+  }
+
+  .w-card-left ul li {
+    font-size: 16px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .w-card-left p {
+    font-size: 18px;
+  }
+
+  .w-card-right {
+    width: 30vw;
+    padding: 30px 60px 0px 10px;
+    transition: 2s;
+  }
+
+  .w-card-right span,
+  p {
+    font-size: 14px;
+    display: inline;
+    transition: 2s;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .w-card {
+    width: 95vw;
+    margin-top: 30px;
+    transition: 2s;
+  }
+
+  .w-card-top {
+    height: 45vw;
+    transition: 2s;
+  }
+
+  .w-card-btn--close button {
+    width: 36px;
+    height: 36px;
+    transition: 2s;
+  }
+
+  .card-btn2--assistir {
+    width: 25vw;
+    height: 10vw;
+    margin: 0 60px 20px 60px;
+    border-radius: 3px;
+    transition: 2s;
+  }
+
+  .card-btn2--assistir label {
+    font-size: 20px;
+    transition: 2s;
+  }
+
+  .card-btn2--assistir button {
+    font-size: 10px;
+    transition: 2s;
+  }
+
+  .w-card-botton {
+  }
+
+  .w-card-left {
+    width: 60vw;
+    padding: 30px 10px 0px 48px;
+    transition: 2s;
+  }
+
+  #limit-age {
+    padding: 0px 4px;
+  }
+
+  .w-card-left ul li {
+    font-size: 16px;
+    height: 30px;
+    margin-right: 20px;
+    transition: 2s;
+  }
+
+  .w-card-right {
+    width: 35vw;
+    padding: 30px 48px 0px 10px;
+    transition: 2s;
+  }
 }
