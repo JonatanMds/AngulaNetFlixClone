@@ -10,16 +10,16 @@ export class ModalComponent implements OnInit {
   @Input() hidenModal: boolean = false
   @Output() hidenModalChange = new EventEmitter()
 
-  cardImage: any
-  cardTitle : any
-  percentRelevance: any
-  year: any
-  minAge: any
-  time: any
-  description: any
-  cast: any
-  genere: any
-  scenesAndMoments: any
+  cardImage: string =""
+  cardTitle : string = ""
+  percentRelevance: number = 0
+  year: number = 0
+  minAge: number = 0
+  time: string = ""
+  description: string = ""
+  cast: string  = ""
+  genere: string = ""
+  scenesAndMoments: string = ""
 
   objectFilme = {
     "cardImage": "https://occ-0-782-185.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSKVUiNlI2oEN2Iz_DrKznVcOuKb2yOn4sretHhVtD8ZZ8pQxHQd7oFwdBv4H6SEYIPNcSE3BY5xHZD0W5oCMnym-2VdqV5If6E_wesDvNjx5B1k-GG8K4Xh0kdRpPsYtwooJtajb1scR4FJOWtDipz-TQinJSL-FWI85qkPyw596EfoFHZbCsg.jpg?r=40f",
@@ -56,11 +56,11 @@ export class ModalComponent implements OnInit {
 
     this.description = this.objectFilme.description
 
-    this.cast = this.objectFilme.cast
+    this.cast = this.transformText( this.objectFilme.cast)
 
-    this.genere = this.objectFilme.genre
+    this.genere = this.transformText( this.objectFilme.genre)
 
-    this.scenesAndMoments = this.objectFilme.scenes
+    this.scenesAndMoments =  this.transformText(this.objectFilme.scenes)
   }
 
   closeModalInf(){
@@ -77,6 +77,11 @@ export class ModalComponent implements OnInit {
     const textHous = (`00${hours}`).slice(-2)
     const textMin = (`00${minut}`).slice(-2)
     return `${textHous }h ${textMin} min`
+  }
+
+  transformText (item:string[]){
+    const textInfo= item.join(", ")
+    return textInfo
   }
 
 

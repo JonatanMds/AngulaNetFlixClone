@@ -10,6 +10,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserWindowComponent } from './user-window/user-window.component';
+import { UserAvatarComponent } from './user-avatar/user-avatar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     MainPageComponent,
     LoginFormComponent,
     SliderComponent,
-    FooterComponent
+    FooterComponent,
+    UserWindowComponent,
+    UserAvatarComponent
   ],
   imports: [
     BrowserModule,
