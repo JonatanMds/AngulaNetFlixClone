@@ -10,6 +10,7 @@ export class SliderComponent implements OnInit {
 
   @Input() slideData: String[] = []
   movieList: GetMoviesData[] = []
+  sliderLoading: Boolean = true
 
   pos = { top: 0, left: 0, x: 0, y: 0 };
   sliderElement : HTMLElement = {} as HTMLElement
@@ -25,7 +26,7 @@ export class SliderComponent implements OnInit {
     this.slideData.forEach( item => {
       this.getMovies.getMoviesService(item).subscribe( result => this.movieList.push(result))  
     })
-    
+    this.sliderLoading = false
   }
 
   ngAfterViewInit() {    
