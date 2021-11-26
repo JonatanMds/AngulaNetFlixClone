@@ -1,3 +1,4 @@
+import { UserWindowComponent } from './user-window/user-window.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -8,7 +9,8 @@ const routes: Routes = [
   {path: 'login', component: LoginFormComponent},
   {path: 'main', component: MainPageComponent},
   {path: 'home', component: HomeComponent},
-  {path: '', component: HomeComponent}  
+  {path: '', component: HomeComponent},
+  {path: 'user',component:UserWindowComponent}
 
 ];
 
