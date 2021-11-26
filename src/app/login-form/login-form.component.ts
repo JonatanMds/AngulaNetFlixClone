@@ -36,7 +36,5 @@ export class LoginFormComponent implements OnInit {
         localStorage.setItem('token', data.token );   
         console.log(this.perfil)
       });
-      
   }
-
 }
