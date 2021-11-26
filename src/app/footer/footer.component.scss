@@ -39,4 +39,12 @@ footer {
     font-size: 1em;
   }
 }
+
+@media screen and(max-width: 426px) {
+  #uls{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+}
 // End Footer
