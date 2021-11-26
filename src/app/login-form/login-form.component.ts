@@ -12,6 +12,7 @@ export class LoginFormComponent implements OnInit {
   
   status: boolean = true;
   loginForm:FormGroup = {} as FormGroup;
+  perfil:string[] = []
 
   constructor(private fb: FormBuilder, private loginService: LoginRequestService) { }
 
@@ -28,13 +29,14 @@ export class LoginFormComponent implements OnInit {
   }
 
   ngOnSubmit() {
-    console.log(this.loginForm.value);
-
+    // console.log(this.loginForm.value);
     this.loginService.login(this.loginForm.value).subscribe( 
       (data:any) => { 
-        console.log(data);
+        this.perfil.push(...data.users);
         localStorage.setItem('token', data.token );   
+        console.log(this.perfil)
       });
+      
   }
 
 }
