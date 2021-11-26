@@ -6,6 +6,7 @@ import { GetUserService, UserInfo } from './get-user.service';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss']
 })
+
 export class MainPageComponent implements OnInit{
 
   user: number = 1

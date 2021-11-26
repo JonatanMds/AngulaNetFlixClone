@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SliderComponent } from './slider/slider.component';
-import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,6 @@ import { LoginFormComponent } from './login-form/login-form.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    MainPageComponent,
-    LoginFormComponent,
     ReactiveFormsModule
   ],
   providers: [],
