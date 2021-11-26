@@ -18,10 +18,9 @@ export class LoginRequestService {
   EndPoint: string = "https://private-3923c4-santandercoders809.apiary-mock.com/login"
 
   constructor(private http: HttpClient) { 
-    console.log('ngOnInit') 
   }
 
-  login(user:User) {
+  login (user:User) {
     return this.http.post(this.EndPoint, user);
   }
 }
