@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'projectCloneNetFlix';
+
+  stateModal:boolean = false
+
+  showModalInf(){
+    this.stateModal= !this.stateModal
+  }
+
 }
+
