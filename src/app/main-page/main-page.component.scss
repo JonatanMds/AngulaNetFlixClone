@@ -10,13 +10,16 @@ header {
   }
 }
 
-.headerContainer {
-  width: 100%;
-  height: 810px;
-  padding: 30px 81px;
+.headerContainer{
+    width: 100%;
+    height: 810px;
+    padding: 45px 81px;
 }
 
 /* ########## MENU ########## */
+nav{
+    margin-left:190px;
+}
 
 nav ul {
   display: flex;
@@ -141,10 +144,10 @@ nav ul li a:hover {
 }
 
 /* ########## MAIN ########## */
-
-main {
-  width: 100%;
-  margin-top: -90px;
+main{
+    width: 100%;
+    margin-top: -90px;
+    position: relative;
 }
 
 section {
@@ -160,7 +163,6 @@ section {
   }
 }
 
-
 @media screen and(max-width: 768px) {
   
   main{
@@ -174,4 +176,12 @@ section {
   }
 }
 
-  
+.mainLoading{
+    top: 150px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}

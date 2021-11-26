@@ -12,11 +12,20 @@ export class MainPageComponent implements OnInit{
 
   user: number = 1
   userInfoData: UserInfo = {} as UserInfo
+  mainLoading: Boolean = true;
 
   constructor(private getUserService:GetUserService){}
   
-  ngOnInit(){
-    this.getUserService.getUser(this.user).subscribe( result => this.userInfoData = result)    
+  ngOnInit(){ 
+    
+    this.getUserService.getUser(this.user).subscribe( result => {
+      this.userInfoData = result
+      this.mainLoading = false
+    })
+  }
+
+  asIsOrder() {
+    return 1;
   }
 
 }
