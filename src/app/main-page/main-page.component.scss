@@ -154,37 +154,5 @@ section{
         font-weight: 700;
         color: white;
         padding-left: 81px;
-    }
-    
-}
-
-
-.slider{
-    overflow-x: scroll;
-    cursor: grab;
-    
-    ul{        
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 20px;
-        list-style: none;
-        padding-left: 81px;
-        transition: transform 0.5s linear;
-
-        li{
-            margin-right: 20px;
-
-            img{
-                width: 15vw;
-            }
-        }
-    }
-
-    &::-webkit-scrollbar{
-        display: none;
-    }
-}
-
-.sliderButton{
-    
+    }    
 }
