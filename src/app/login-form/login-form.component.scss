@@ -1,6 +1,6 @@
 .login {
   &Content {
-    // background-image: url("./assets/images/netflix_background1.png");
+    background-image: url("/assets/images/netflix_background1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,5 +84,19 @@
   &Pages {
     display: flex;
     justify-content: space-between;
+    ul{
+      list-style: none;
+    }
   }
+}
+
+@media screen and(max-width: 426px) {
+    form{
+      margin-top: 100px;
+    }
+
+    .footerPages{
+      display: flex;
+      flex-direction: column;
+    }
 }
