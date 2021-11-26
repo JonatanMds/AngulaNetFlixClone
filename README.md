@@ -1,27 +1,46 @@
-# ProjectCloneNetFlix
+<h1>Clone NetFlix</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+<p>Projeto final do modulo Front-End do curso Full-Stack organizado pelo Grupo Santander em parceria com a Let's Code</p>
 
-## Development server
+> Status: Developing ⚠️
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Challenge
 
-## Code scaffolding
+> <p>Desenvolver um clone do Netflix, utilizando-se do frame-work Angular Js</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Students
 
-## Build
++ Isreal Maicena Neves
++ Rafael
++ Armando
++ Jonatan Marques
++ Taina
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Technologies Used:
+<table>
+  <tr>
+    <td>Angular js</td>
+    <td>typescript</td>
+  </tr>
+  
+  <tr>
+    <td>13*</td>
+    <td>~4*</td>
+  </tr>
+  
+</table>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running the Front End
 
-## Running end-to-end tests
+### Clone this repository
+$ git clone <https://github.com/israelcena/AngulaNetFlixClone.git>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Access the project folder in the terminal/cmd
+$ cd AngulaNetFlixClone
 
-## Further help
+### Install dependencies
+$ npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Run the application in developer mode 
+$ ng serve
