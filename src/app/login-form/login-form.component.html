@@ -37,7 +37,11 @@
           <p>
             Essa página é protegida pelo Google reCAPTCHA para garantir que você
             não é um robô.
-            <span id="show-more" *ngIf="status; else showMore">
+            <span
+              id="show-more"
+              *ngIf="status; else showMore"
+              (click)="toggleText()"
+            >
               Saiba mais.</span
             >
           </p>
