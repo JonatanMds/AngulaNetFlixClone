@@ -1,170 +1,122 @@
-body{
-    font-size: 16px;
+body {
+  font-size: 16px;
 }
 
 // Start Main
-#main{
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 6px #2d2d2d;
+
+  #title {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 168px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    text-align-last: center;
+    padding: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: solid 6px #2D2D2D;
-    
-    #title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 168px;
-        margin-bottom: 40px;
-    }
+  }
 
-    p{
-        text-align-last: center;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  #button {
+    background-color: #e50914;
+    width: 220px;
+    height: 80px;
+    margin-top: 90px;
+    margin-bottom: 147px;
+    border-radius: 10px;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
 
-    #button{
-        background-color: #E50914;
-        width: 220px;
-        height: 80px;
-        margin-top: 90px;
-        margin-bottom: 147px;
-        border-radius: 10px;
-        border: none;
-        font-size: 2em;
-        color: white;
-        cursor: pointer;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
 
-        a{
-            text-decoration: none;
-            color: white;
-        }
-    }
+  #button:hover {
+    background-color: #fd000d;
+  }
 
-    #button:hover{
-        background-color: #FD000D;
-    }
-        
-    h1{
-        font-weight: 800;
-        font-size: 4.5em;
-        text-align-last: center;
-    }
-    
-    p{
-        font-size: 1.8em;
-    }
+  h1 {
+    font-weight: 800;
+    font-size: 4.5em;
+    text-align-last: center;
+  }
+
+  p {
+    font-size: 1.8em;
+  }
 }
 // End Main
 
-
 // Start div
-.div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color:var(--color-tertiary);
-    border-bottom: solid 6px #2D2D2D;
-    color: var(--color-primary);
-    padding: 45px;
+.div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-tertiary);
+  border-bottom: solid 6px #2d2d2d;
+  color: var(--color-primary);
+  padding: 45px;
 
-    .text{
-        width: 586px;
-        p{
-            line-height: 47px;
-        }
+  .text {
+    width: 586px;
+    p {
+      line-height: 47px;
     }
-    
-    h1{
-        font-size: 3.1em;
-        font-weight: 800;
-    }
-    p{
-        font-size: 1.5em;
-        font-weight: 400;
-    }
+  }
+
+  h1 {
+    font-size: 3.1em;
+    font-weight: 800;
+  }
+  p {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
 }
 // End div
-
-
-// Start Footer
-footer{
-    display: flex;
-    flex-direction: column;
-    color: #6F6F6F;
-    background-color: var(--color-tertiary);
-    padding: 45px;
-    
-    P{
-        padding-bottom: 37px;
-        font-size: 1.5em;
-    }
-     
-    #uls{
-         display: flex;
-         justify-content: space-between;
-         
-         ul{
-             list-style: none;
-             padding-bottom: 62px;
-             
-             li{
-                padding-bottom: 10px;
-                font-size: 1em;
-
-                a{
-                    text-decoration: none;
-                    color: #6F6F6F;
-                }
-             }
-
-             li:hover{
-                text-decoration: underline;
-             }
-         }
-     }
-
-     #netflixBrasil{
-         font-size: 1em;
-     }
-}
-// End Footer
-
-
 
 // responsividade
 
 @media screen and(max-width: 1024px) {
-    body{
-        font-size: 12px;
-    }
+  body {
+    font-size: 12px;
+  }
 }
 @media screen and(max-width: 768px) {
-    .div{
-        display: flex;
-        flex-direction: column;
+  .div {
+    display: flex;
+    flex-direction: column;
 
-        .text{
-            width: 100vw;
-            padding: 10px;
-        }
-
-        img{
-            order: 1;
-        }
-    }   
-
-
-    h1{
-        text-align-last: center;
+    .text {
+      width: 100vw;
+      padding: 10px;
     }
 
-    p{
-        text-align-last: center;
+    img {
+      order: 1;
     }
+  }
+
+  h1 {
+    text-align-last: center;
+  }
+
+  p {
+    text-align-last: center;
+  }
 }

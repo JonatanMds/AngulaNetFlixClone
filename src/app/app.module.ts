@@ -9,6 +9,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { SliderComponent } from './slider/slider.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,14 @@ import { SliderComponent } from './slider/slider.component';
     ModalComponent,
     MainPageComponent,
     LoginFormComponent,
-    SliderComponent
+    SliderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

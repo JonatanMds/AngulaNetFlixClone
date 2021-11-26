@@ -1,0 +1,42 @@
+// Start Footer
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #6f6f6f;
+  background-color: var(--color-tertiary);
+  padding: 45px;
+
+  P {
+    padding-bottom: 37px;
+    font-size: 1.5em;
+  }
+
+  #uls {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      list-style: none;
+      padding-bottom: 62px;
+
+      li {
+        padding-bottom: 10px;
+        font-size: 1em;
+
+        a {
+          text-decoration: none;
+          color: #6f6f6f;
+        }
+      }
+
+      li:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #netflixBrasil {
+    font-size: 1em;
+  }
+}
+// End Footer
