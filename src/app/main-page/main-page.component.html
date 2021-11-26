@@ -1,40 +1,39 @@
 <header>
-    <div class="headerContainer">
+  <div class="headerContainer">
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Séries</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li><a href="#">Bombando</a></li>
+        <li><a href="#">Minha lista</a></li>
+      </ul>
+    </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Bombando</a></li>
-                <li><a href="#">Minha lista</a></li>
-            </ul>
-        </nav>
-    
-        <div class="banner">
-    
-            <img src="../../assets/img/banner-movie-logo.png" alt=""> 
-    
-            <div class="rankToday">
-                <div>
-                    <p>TOP 10</p>
-                </div>
-                <span>Brasil: top 2 de hoje</span>
-            </div>
+    <div class="banner">
+      <img src="../../assets/images/banner-movie-logo.png" alt="" />
 
-            <div class="movieTitle">
-                <p>Um agente do FBI persegue o ladrão de arte mais procurado do mundo. Ele só não esperava ter seu alvo como parceiro para prender uma bandida muito esperta.</p>
-            </div>
-    
-            <div class="bannerButtons">
-                <button type="button" class="playButton">Assistir</button>
-                <button type="button" class="infoButton">Mais informações</button>
-            </div>
-    
+      <div class="rankToday">
+        <div>
+          <p>TOP 10</p>
         </div>
+        <span>Brasil: top 2 de hoje</span>
+      </div>
 
+      <div class="movieTitle">
+        <p>
+          Um agente do FBI persegue o ladrão de arte mais procurado do mundo.
+          Ele só não esperava ter seu alvo como parceiro para prender uma
+          bandida muito esperta.
+        </p>
+      </div>
+
+      <div class="bannerButtons">
+        <button type="button" class="playButton">Assistir</button>
+        <button type="button" class="infoButton">Mais informações</button>
+      </div>
     </div>
-
+  </div>
 </header>
 
 <main>
@@ -47,5 +46,14 @@
         <app-slider [slideData]="listMovies.value"></app-slider>      
 
     </section>
+
+<!--   <section *ngFor="let listMovies of userInfoData | keyvalue">
+    <h2 *ngIf="listMovies.key == 'popular'">Populares na Netflix</h2>
+    <h2 *ngIf="listMovies.key == 'keepWatching'">
+      Continuar assistindo como Usuário {{ user }}
+    </h2>
+
+    <app-slider [slideData]="listMovies.value"></app-slider>
+  </section> -->
 
 </main>

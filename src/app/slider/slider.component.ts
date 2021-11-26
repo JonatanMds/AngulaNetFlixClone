@@ -14,22 +14,22 @@ export class SliderComponent implements OnInit {
 
   pos = { top: 0, left: 0, x: 0, y: 0 };
   sliderElement : HTMLElement = {} as HTMLElement
-  mouseMoveBound:any 
+  mouseMoveBound:any
   mouseUpBound:any
 
   constructor(private elementRef:ElementRef, private getMovies:GetMoviesService) {}
-  
+
   ngOnInit(){
     this.mouseMoveBound = this.mouseMoveHandle.bind(this)
-    this.mouseUpBound = this.mouseUpHandle.bind(this)    
+    this.mouseUpBound = this.mouseUpHandle.bind(this)
 
     this.slideData.forEach( item => {
-      this.getMovies.getMoviesService(item).subscribe( result => this.movieList.push(result))  
+      this.getMovies.getMoviesService(item).subscribe( result => this.movieList.push(result))
     })
     this.sliderLoading = false
   }
 
-  ngAfterViewInit() {    
+  ngAfterViewInit() {
     this.sliderElement = this.elementRef.nativeElement.querySelector('.slider')
     this.sliderElement.addEventListener('mousedown', this.mouseDownHandle.bind(this));
   }
@@ -37,7 +37,7 @@ export class SliderComponent implements OnInit {
   mouseDownHandle(event:MouseEvent){
     this.sliderElement.style.cursor = 'grabbing';
     this.sliderElement.style.userSelect = 'none';
-    
+
     this.pos = {
       left: this.sliderElement.scrollLeft,
       top: this.sliderElement.scrollTop,
@@ -45,22 +45,22 @@ export class SliderComponent implements OnInit {
       y: event.clientY,
     };
 
-    this.sliderElement.addEventListener('mousemove', this.mouseMoveBound, false)    
+    this.sliderElement.addEventListener('mousemove', this.mouseMoveBound, false)
     this.sliderElement.addEventListener('mouseup', this.mouseUpBound, false)
   }
 
   mouseMoveHandle(event:MouseEvent){
     const dx = event.clientX - this.pos.x;
     const dy = event.clientY - this.pos.y;
-    
+
     this.sliderElement.scrollTop = this.pos.top - dy;
     this.sliderElement.scrollLeft = this.pos.left - dx;
   }
 
   mouseUpHandle(){
     this.sliderElement.style.cursor = 'grab';
-    this.sliderElement.style.removeProperty('user-select');    
-    
+    this.sliderElement.style.removeProperty('user-select');
+
     this.sliderElement.removeEventListener('mousemove', this.mouseMoveBound, false)
     this.sliderElement.removeEventListener('mouseup', this.mouseUpBound,false )
   }
