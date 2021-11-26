@@ -7,12 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LoginFormComponent } from './login-form/login-form.component';
-
 import { ModalComponent } from './modal/modal.component';
-
-import { MainPageComponent } from './main-page/main-page.component';
-
-import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
