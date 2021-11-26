@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { LoginRequestService } from '../login-request.service';
+import { Router } from '@angular/router';
+import { ProfileNameService } from '../profile-name.service';
 
 @Component({
   selector: 'app-login-form',
@@ -9,12 +11,10 @@ import { LoginRequestService } from '../login-request.service';
 })
 
 export class LoginFormComponent implements OnInit {
-  
   status: boolean = true;
   loginForm:FormGroup = {} as FormGroup;
-  perfil:string[] = []
 
-  constructor(private fb: FormBuilder, private loginService: LoginRequestService) { }
+  constructor(private fb: FormBuilder, private loginService: LoginRequestService, private router: Router, private ProfileName: ProfileNameService) { }
 
   ngOnInit(): void {
      this.loginForm = this.fb.group({
@@ -32,9 +32,9 @@ export class LoginFormComponent implements OnInit {
     // console.log(this.loginForm.value);
     this.loginService.login(this.loginForm.value).subscribe( 
       (data:any) => { 
-        this.perfil.push(...data.users);
+        this.ProfileName = data.users;
         localStorage.setItem('token', data.token );   
-        console.log(this.perfil)
+        console.log(this.ProfileName)
       });
   }
 }
