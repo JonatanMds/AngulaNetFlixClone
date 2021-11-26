@@ -31,3 +31,32 @@
         display: none;
     }
 }
+
+@media screen and(max-width: 1024px) {
+    
+    .slider{
+        #img{
+                width: 50vw;
+            }
+        }
+  }
+
+
+@media screen and(max-width: 768px) {
+    
+    .slider{
+        ul{
+            padding-left: 20px;
+            
+            li{
+                margin-right: 0px;
+                img{
+                    width: 50vw;
+                    border-radius: 0px;
+                }
+            }
+        }
+
+    }
+    
+  }
