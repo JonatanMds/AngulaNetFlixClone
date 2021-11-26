@@ -6,3 +6,9 @@
   </div>
 </div>
 <router-outlet></router-outlet>
+
+<!-- ADICIONAR O COMPONEMTE MODAL A TELA COM AS SÉRIES -->
+<app-modal [(hidenModal)]="stateModal" *ngIf="stateModal"></app-modal>
+
+<!-- METODO QUE CHAMA A JANELA MODAL -->
+<button type="button" (click)="showModalInf()">Show Modal</button>

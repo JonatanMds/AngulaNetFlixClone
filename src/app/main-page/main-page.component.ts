@@ -1,35 +1,21 @@
-import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { GetUserService, UserInfo } from './get-user.service';
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss']
 })
+
 export class MainPageComponent implements OnInit{
 
-  sliderPosition:number = 0
+  user: number = 1
+  userInfoData: UserInfo = {} as UserInfo
 
-  @ViewChild('sliderContainer') slidecontainer: ElementRef<HTMLElement> = {} as ElementRef
-
-  sliderRight(){
-    if(this.sliderPosition != 0){
-      this.sliderPosition += window.innerWidth
-      this.slidecontainer.nativeElement.style.transform = `translateX(${this.sliderPosition}px)`
-      //console.log(this.sliderPosition)
-      console.log(this.slidecontainer)
-    }
-  }
-
-  sliderLeft(){
-    console.log(this.sliderPosition)
-    this.sliderPosition -= window.innerWidth
-    this.slidecontainer.nativeElement.style.transform = `translateX(${this.sliderPosition}px)`
-    console.log(this.sliderPosition)
-    console.log(`tecla: ${window.innerWidth} container: ${this.slidecontainer.nativeElement.offsetWidth}`)
-  }
-
+  constructor(private getUserService:GetUserService){}
+  
   ngOnInit(){
-    
+    this.getUserService.getUser(this.user).subscribe( result => this.userInfoData = result)    
   }
 
 }
