@@ -7,6 +7,7 @@ import { GetUserService, UserInfo } from './get-user.service';
   styleUrls: ['./main-page.component.scss']
 })
 
+
 export class MainPageComponent implements OnInit{
 
   user: number = 1
@@ -28,3 +29,4 @@ export class MainPageComponent implements OnInit{
   }
 
 }
+
