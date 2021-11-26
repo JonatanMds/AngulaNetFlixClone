@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileNameService } from '../profile-name.service';
 
 @Component({
   selector: 'app-user-window',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserWindowComponent implements OnInit {
 
-  constructor() { }
+  constructor(private profileNameService:ProfileNameService) { }
 
   ngOnInit(): void {
+    console.log(this.profileNameService);
   }
 
 }
