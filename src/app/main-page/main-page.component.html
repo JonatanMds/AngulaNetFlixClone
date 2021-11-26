@@ -39,46 +39,13 @@
 
 <main>
 
-    <section class="popular">
+    <section *ngFor="let listMovies of userInfoData | keyvalue">
 
-        <h2>Populares na Netflix</h2>
-        <div class="slider">
-            <ul #sliderContainer>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-            </ul>
-        </div>
-        <div class="sliderButton">
-            <button type="button" class="preview" (click)="sliderRight()"> < </button>
-            <button type="button" class="next" (click)="sliderLeft()"> > </button>
-        </div>
+        <h2 *ngIf="listMovies.key == 'popular'">Populares na Netflix</h2>
+        <h2 *ngIf="listMovies.key == 'keepWatching'">Continuar assistindo como Usuário {{user}}</h2>
+        
+        <app-slider [slideData]="listMovies.value"></app-slider>      
 
     </section>
-
-    <section class="continueWatching">
-
-        <h2>Continuar assistindo como Usuário 1</h2>  
-        <div class="slider">
-            <ul>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-                <li><img src="../../assets/img/thumb-1.png" alt=""></li>
-            </ul>
-        </div>       
-            <button type="button" class="preview"><</button>
-            <button type="button" class="next">></button>
-    </section>
-
     
 </main>
