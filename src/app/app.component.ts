@@ -7,14 +7,11 @@ import { Component, Input, Output } from '@angular/core';
 })
 export class AppComponent {
 
-  hidenModalInf= false
+  stateModal:boolean = false
 
   showModalInf(){
-    this.hidenModalInf= true
+    this.stateModal= !this.stateModal
   }
 
-  onStateModalIn(evento: any ){
-    console.log(evento)
-    this.hidenModalInf = evento.value
-  }
 }
+

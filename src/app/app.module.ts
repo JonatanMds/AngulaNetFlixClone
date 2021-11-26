@@ -15,16 +15,13 @@ import { LoginFormComponent } from './login-form/login-form.component';
   declarations: [
     AppComponent,
     ModalComponent,
-<<<<<<< HEAD
-=======
     MainPageComponent,
->>>>>>> 9598790f865ebff06fb18d5d9ffc3abadb006389
     LoginFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
