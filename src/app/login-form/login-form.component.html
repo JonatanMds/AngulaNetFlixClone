@@ -1,0 +1,87 @@
+<div class="loginArea">
+  <div class="loginContent">
+    <form
+      action="#"
+      method="post"
+      class="loginForm"
+      [formGroup]="loginForm"
+      (submit)="ngOnSubmit()"
+    >
+      <div class="loginTitle">
+        <h1>Entrar</h1>
+      </div>
+      <div class="loginInputGroup">
+        <div class="loginInput">
+          <input
+            type="text"
+            name="email"
+            placeholder="Email ou número do telefone"
+            formControlName="email"
+            (click)="console()"
+            required
+          />
+        </div>
+        <div class="loginInput">
+          <input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            formControlName="password"
+            (click)="console()"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="loginButton">
+        <button type="submit">Entrar</button>
+      </div>
+      <div class="loginText">
+        <div>
+          <p>
+            Essa página é protegida pelo Google reCAPTCHA para garantir que você
+            não é um robô.
+            <span
+              id="show-more"
+              *ngIf="status; else showMore"
+              (click)="toggleText()"
+            >
+              Saiba mais.</span
+            >
+          </p>
+        </div>
+        <div>
+          <ng-template #showMore>
+            <p class="loginTextBottom">
+              As informações recolhidas pelo Google reCAPTCHA estão sujeitas à
+              Política de Privacidade e Termos de Uso, e são usadas para
+              oferecer, manter e melhorar o serviço reCAPTCHA e por questões de
+              segurança (não são usadas para exibir anúncios personalizados pelo
+              Google).
+            </p>
+          </ng-template>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footerSupport"><p>Dúvidas? Ligue 0800-761-4631</p></div>
+  <div class="footerPages">
+    <div>
+      <div><p>Perguntas frequentes</p></div>
+      <div><p>Preferências de cookies</p></div>
+    </div>
+    <div>
+      <div><p>Centro de ajuda</p></div>
+      <div><p>Informações corporativas</p></div>
+    </div>
+    <div>
+      <div><p>Termos de uso</p></div>
+    </div>
+    <div>
+      <div><p>Privacidade</p></div>
+    </div>
+  </div>
+  <div><p>Netflix Brasil</p></div>
+</footer>
